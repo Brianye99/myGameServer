@@ -1,0 +1,61 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.1.110”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  AOIWorld.cpp
+  GameChannel.cpp
+  GameMsg.cpp
+F:\gameserver\GameServer\GameMsg.h(19,6): warning : ‘GameMsg::enMsgType’ will be initialized after [-Wreorder]
+F:\gameserver\GameServer\GameMsg.h(19,6): warning :    19 |     }enMsgType;
+F:\gameserver\GameServer\GameMsg.h(19,6): warning :       |      ^~~~~~~~~
+F:\gameserver\GameServer\GameMsg.h(10,32): warning : ‘google::protobuf::Message* GameMsg::pMsg’ [-Wreorder]
+F:\gameserver\GameServer\GameMsg.cpp(4,1): warning : when initialized here [-Wreorder]
+  GameProtocol.cpp
+F:\gameserver\GameServer\GameProtocol.cpp(50,25): warning : comparison of integer expressions of different signedness: ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+F:\gameserver\GameServer\GameProtocol.cpp(50,25): warning :    50 |   if (szLast.size() - 8 < iLength)
+F:\gameserver\GameServer\GameProtocol.cpp(50,25): warning :       |       ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+F:\gameserver\GameServer\GameProtocol.cpp(91,27): warning : conversion from ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} to ‘int’ may change value [-Wconversion]
+F:\gameserver\GameServer\GameProtocol.cpp(91,27): warning :    91 |  iLength = MsgContent.size();
+F:\gameserver\GameServer\GameProtocol.cpp(91,27): warning :       |            ~~~~~~~~~~~~~~~^~
+F:\gameserver\GameServer\GameProtocol.cpp(95,33): warning : conversion from ‘int’ to ‘char’ may change value [-Wconversion]
+F:\gameserver\GameServer\GameProtocol.cpp(95,33): warning :    95 |  pret->push_back((iLength >> 0) & 0xff);
+F:\gameserver\GameServer\GameProtocol.cpp(95,33): warning :       |                  ~~~~~~~~~~~~~~~^~~~~~
+F:\gameserver\GameServer\GameProtocol.cpp(96,33): warning : conversion from ‘int’ to ‘char’ may change value [-Wconversion]
+F:\gameserver\GameServer\GameProtocol.cpp(96,33): warning :    96 |  pret->push_back((iLength >> 8) & 0xff);
+F:\gameserver\GameServer\GameProtocol.cpp(96,33): warning :       |                  ~~~~~~~~~~~~~~~^~~~~~
+F:\gameserver\GameServer\GameProtocol.cpp(97,34): warning : conversion from ‘int’ to ‘char’ may change value [-Wconversion]
+F:\gameserver\GameServer\GameProtocol.cpp(97,34): warning :    97 |  pret->push_back((iLength >> 16) & 0xff);
+F:\gameserver\GameServer\GameProtocol.cpp(97,34): warning :       |                  ~~~~~~~~~~~~~~~~^~~~~~
+F:\gameserver\GameServer\GameProtocol.cpp(98,34): warning : conversion from ‘int’ to ‘char’ may change value [-Wconversion]
+F:\gameserver\GameServer\GameProtocol.cpp(98,34): warning :    98 |  pret->push_back((iLength >> 24) & 0xff);
+F:\gameserver\GameServer\GameProtocol.cpp(98,34): warning :       |                  ~~~~~~~~~~~~~~~~^~~~~~
+F:\gameserver\GameServer\GameProtocol.cpp(99,28): warning : conversion from ‘int’ to ‘char’ may change value [-Wconversion]
+F:\gameserver\GameServer\GameProtocol.cpp(99,28): warning :    99 |  pret->push_back((id >> 0) & 0xff);
+F:\gameserver\GameServer\GameProtocol.cpp(99,28): warning :       |                  ~~~~~~~~~~^~~~~~
+F:\gameserver\GameServer\GameProtocol.cpp(100,28): warning : conversion from ‘int’ to ‘char’ may change value [-Wconversion]
+F:\gameserver\GameServer\GameProtocol.cpp(100,28): warning :   100 |  pret->push_back((id >> 8) & 0xff);
+F:\gameserver\GameServer\GameProtocol.cpp(100,28): warning :       |                  ~~~~~~~~~~^~~~~~
+F:\gameserver\GameServer\GameProtocol.cpp(101,29): warning : conversion from ‘int’ to ‘char’ may change value [-Wconversion]
+F:\gameserver\GameServer\GameProtocol.cpp(101,29): warning :   101 |  pret->push_back((id >> 16) & 0xff);
+F:\gameserver\GameServer\GameProtocol.cpp(101,29): warning :       |                  ~~~~~~~~~~~^~~~~~
+F:\gameserver\GameServer\GameProtocol.cpp(102,29): warning : conversion from ‘int’ to ‘char’ may change value [-Wconversion]
+F:\gameserver\GameServer\GameProtocol.cpp(102,29): warning :   102 |  pret->push_back((id >> 24) & 0xff);
+F:\gameserver\GameServer\GameProtocol.cpp(102,29): warning :       |                  ~~~~~~~~~~~^~~~~~
+  GameRole.cpp
+F:\gameserver\GameServer\GameRole.cpp(174,10): warning : conversion from ‘std::linear_congruential_engine<long unsigned int, 16807, 0, 2147483647>::result_type’ {aka ‘long unsigned int’} to ‘float’ may change value [-Wconversion]
+F:\gameserver\GameServer\GameRole.cpp(174,10): warning :   174 |  x = 100 + RoleRandomEngine() % 30;
+F:\gameserver\GameServer\GameRole.cpp(174,10): warning :       |      ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+F:\gameserver\GameServer\GameRole.cpp(175,10): warning : conversion from ‘std::linear_congruential_engine<long unsigned int, 16807, 0, 2147483647>::result_type’ {aka ‘long unsigned int’} to ‘float’ may change value [-Wconversion]
+F:\gameserver\GameServer\GameRole.cpp(175,10): warning :   175 |  z = 100 + RoleRandomEngine() % 30;
+F:\gameserver\GameServer\GameRole.cpp(175,10): warning :       |      ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+  main.cpp
+F:\gameserver\GameServer\main.cpp(41,8): warning : unused variable ‘sid’ [-Wunused-variable]
+F:\gameserver\GameServer\main.cpp(41,8): warning :    41 |  pid_t sid = setsid();
+F:\gameserver\GameServer\main.cpp(41,8): warning :       |        ^~~
+  msg.pb.cpp
+  RandomName.cpp
+  ZinxTimer.cpp
+  正在链接对象
+  GameServer.vcxproj -> F:\gameserver\GameServer\bin\x64\Debug\GameServer.out
